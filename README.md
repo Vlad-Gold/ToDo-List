@@ -37,3 +37,9 @@
 TaskFormPage отключены типы, требуется донастроить типизацию.
 После ручного тестирования багов не обнаружено.
 
+Запуск проекта по шагам:
+git clone https://github.com/Vlad-Gold/ToDo-List.git
+cd ToDo-List
+npm i
+npm run dev
+
