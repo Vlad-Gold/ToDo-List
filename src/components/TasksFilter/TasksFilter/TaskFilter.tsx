@@ -16,18 +16,18 @@ const TasksFilter = ({ onFilter }: TasksFilterProps) => {
 
   const handleFilterButtonClick = () => {
     setIsMenuOpen((prev) => !prev);
-    setFilterType("");
-    setFilterValue("");
   };
 
   const handleClearFilter = () => {
     setFilterType("");
     setFilterValue("");
-    onFilter("", "");
+    onFilter("", ""); 
   };
 
   useEffect(() => {
-    onFilter(filterType, filterValue);
+    if (filterValue !== "") {
+      onFilter(filterType, filterValue);
+    }
   }, [filterValue, filterType, onFilter]);
 
   return (
