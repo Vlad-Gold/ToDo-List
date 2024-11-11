@@ -1,0 +1,123 @@
+.filterContainer {
+  position: relative;
+}
+
+.filterButton {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterButton:hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+}
+
+.filterButton:active {
+  background-color: #4e555b;
+  transform: translateY(0);
+}
+
+.filterButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(108, 117, 125, 0.5);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 125%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownOption {
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dropdownOption:hover {
+  background-color: #f0f0f0;
+}
+
+.activeFilter {
+  background-color: #01070e;
+  color: white;
+  font-weight: bold;
+}
+
+.inputContainer,
+.rangeInputContainer {
+  margin-top: 10px;
+}
+
+.inputContainer label,
+.rangeInputContainer label {
+  font-size: 14px;
+  color: #333;
+}
+
+.inputContainer input,
+.rangeInputContainer input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.statusDropdown {
+  margin-top: 10px;
+}
+
+.statusOption {
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.statusOption:hover {
+  background-color: #f0f0f0;
+}
+
+.clearFilterButton {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #ff4040;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clearFilterButton:hover {
+  background-color: #e02d2d;
+}
+
+.closeButton {
+  position: absolute;
+  top: -2px;
+  right: -13px;
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+
+.closeButton:hover {
+  color: #ff4040;
+}
+

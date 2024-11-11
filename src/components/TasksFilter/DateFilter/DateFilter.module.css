@@ -1,0 +1,10 @@
+.rangeInputContainer {
+    margin-top: 10px;
+  }
+  
+  .rangeInputContainer input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  

@@ -1,0 +1,33 @@
+.trash {
+  margin: 3% auto;
+  color: orange;
+  font-size: 30px;
+}
+
+.emptyTrash {
+  margin-bottom: 3ch;
+  font-size: 24px;
+  color: #5e0d0d;
+}
+
+.clearTrashButton {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.clearTrashButton button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #8a7d7d;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.clearTrashButton button:hover {
+  background-color: #746464;
+}

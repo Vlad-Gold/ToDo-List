@@ -1,0 +1,43 @@
+.inputField {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.textareaField {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    display: block;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 600px) {
+    .inputField,
+    .textareaField {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+

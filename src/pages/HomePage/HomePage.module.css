@@ -1,0 +1,87 @@
+.tasksHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin-top: 5%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  margin-bottom: 20px;
+  flex-wrap: wrap; 
+}
+
+.trashButton,
+.editButton {
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+}
+
+.title {
+  color: orange;
+  margin-top: 3%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.noTask {
+  font-size: 24px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .tasksHeader {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .noTask {
+    font-size: 20px;
+  }
+
+  button {
+    width: 100%; 
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tasksHeader {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .noTask {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 12px;
+  }
+}

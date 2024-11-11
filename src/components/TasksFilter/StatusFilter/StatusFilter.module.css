@@ -1,0 +1,19 @@
+.statusDropdown {
+    margin-top: 10px;
+  }
+  
+  .statusOption {
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+  
+  .statusOption:hover {
+    background-color: #f0f0f0;
+  }
+
+.activeFilter {
+  background-color: #01070e;
+  color: white; 
+  font-weight: bold; 
+}
+  

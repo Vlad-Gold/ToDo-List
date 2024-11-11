@@ -1,0 +1,14 @@
+.dropdownOption {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.dropdownOption:hover {
+  background-color: #f0f0f0;
+}
+
+.activeFilter {
+  background-color: #01070e;
+  color: white;
+  font-weight: bold;
+}
