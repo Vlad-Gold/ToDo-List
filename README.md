@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# Список задач (Тестовое) 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Стек приложения: Vite, TS, React, RTK, module css.
+Данный стек был выбран за удобство, попульрность и актуальность в текущей момент времени.
 
-Currently, two official plugins are available:
+Приложение представляет собой список задач. 
+На главной странице можно "Создать ", "Фильтровать" " Редактировать", "Удалить" задачу, 
+а также перейти в корзину, для просмотра удаленных задач.
+Создание и редактирование задач происходит на отдельных страницах.
+Сама задача, после создания, состоит из заголовка, описания, даты начала, дата конца задач,
+статуса выполнена/не выполнена и действий, состоящих из кнопок удалить и редактировать. 
+Пагинация присутствует всегда, даже если страница 1 (для демонстрации).
+На главной странице отображатеся 15 задач (можно изменить при желании),
+при завершении списка задач появляется надпись Конец списка задач.
+Пагинация также присутствует в корзине, 10 задач отображается на главной.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+При создании задачи, в полях присутствует валидаци, ограничения по 
+некорреткной дате, ограничения по длине описания и заголовка, с выведением 
+того, что нужно чтобы создать задачу корреткно. 
 
-## Expanding the ESLint configuration
+Имеется возможность очистить задачи в корзине, а также восстановить нужную обратно
+в наш список.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Все созданные и удаленные задачи сохраняются в локальном хранилище, с имитацией ошибки
+в 50 процентах случаев, в таком случае появляется кнопка Повторить синхронизацию.
+Статус синхронизации отображается на всех страницах. 
 
-- Configure the top-level `parserOptions` property like this:
+Филтрация происходит по названию, по дате начала задачи (вводим точную дату),
+конца задачи (вводим также точную дату), статус выполнения. Фильтрацию можно 
+сбросить нажав на кнопку Сбросить Фильтрацию.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Адаптивная верстка компонентов с использованием флексом.
+В рамках архитектуры FSD, структура проекта будет разделена по фичам, страницам, компонентам.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Примечания: Требуется немного доработать адаптивность и архитектуру приложения.
+TaskFormPage отключены типы, требуется донастроить типизацию.
+После ручного тестирования багов не обнаружено.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
